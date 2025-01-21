@@ -1,0 +1,184 @@
+<!DOCTYPE html>
+<html> 
+  <head>
+    <title>Bedelia's</title>
+     
+  </head>
+  <style>
+   
+ 
+   body{
+      background-color:#FEF3DF;
+    }
+
+   .img{
+      border-style: solid;
+      border-color: #1A3E62;
+    }
+   .gfg {
+      position: relative;
+      width: 100%;
+      text-align: center;
+    }
+
+   div.transbox {
+      margin: 30px;
+      background-color:#1A3E62;
+      ;
+      border: 1px solid #102942;
+    }
+
+/* this makes part of box*/
+   div.transbox p {
+      margin: 5%;
+      font-weight: bold;
+      color: #1A3E62;
+}
+
+/* this is the main title color */
+   .title{
+      color:#655d4e;
+    }
+
+/* this is the main text color */
+   .text{
+      color:#655d4e;
+    }
+
+/* menu text */
+  .partext{
+  color:#655d4e;
+  font-size: 17px;
+}
+
+/* menu desc text */
+  .babypartext{
+  color: #06212d;
+  ;
+  font-size: 15px;
+}
+
+/* this is the color for the buttom */
+   .button{
+      color:#D1DFE0;
+    }
+
+   .darkbrown{
+      color: rgb(222, 213, 255);
+      ;
+    }
+   .dropDownSize { 
+      width:150px; 
+
+}
+
+/* these are the main colors */
+    .colors {
+    color:#FBF5DF;
+    color:#FAEBC4;
+    color:#FEF3DF; 
+    color:#1A3E62;
+    color:#156181;
+    color:#D1DFE0;
+  }
+
+  /* this is the tabs styles */
+   .style {
+      margin: 0;
+      padding: 0;
+    }
+
+   .CTR  {
+      border: 1px solid #1A3E62;
+      margin: 1rem;
+    }
+
+   [data-tab-info] {
+      display: none;
+    }
+
+   .active[data-tab-info] {
+      display: block;
+    }
+
+   .tab-content {
+      margin-top: 1rem;
+      padding-left: 1rem;
+      font-size: 20px;
+      font-family: sans-serif;
+      font-weight: bold;
+      color: rgb(0, 0, 0);
+    }
+
+   .tabs {
+      border-bottom: 1px #1A3E62;
+      background-color: #1A3E62;
+      font-size: 25px;
+      color: rgb(222, 213, 255);
+      display: flex;
+      margin: 0;
+    }
+
+   .tabs span {
+      background: #1A3E62;
+      padding: 10px;
+      border: 1px solid #1A3E62;
+    }
+/* this should change the tabs' opacity */
+   .tabs span:hover {
+      background:#1A3E62;
+      cursor: pointer;
+      color: black;
+      opacity: 0.5;
+    }
+/* this is the end of tabs style */
+  </style>
+  <body>
+    
+<div class="tabs__tab" id="Menu" data-tab-info>
+  <div class="gfg">
+  <div class="transbox">
+    <h1 class="darkbrown">Menu</h1>
+  </div>
+  <p class="text">MENU</p>
+  <p class="text"><u>Appetizers</u></p>
+  <!-- Gyoza -->
+  <p class="partext">Gyoza $7.99</p>
+  <p class="babypartext">Japanese dumplings made of dough and filled with</p>
+  <p class="babypartext">mushrooms, onions, carrots, leeks, and cabbage;</p>
+  <p class="babypartext">seasoned with salt, garlic, and ginger.</p>
+  <!-- Yakitori -->
+  <p class="partext">Tofu and Mushroom Yakitori $6.99</p>
+  <p class="babypartext">A japanese barbeque skewer; made with mushrooms and green onions. 
+      Grilled over a charcoal fire and brushed with tare sauce.</p>
+  <!-- Onigiri -->
+  <p class="partext">Onigiri $5.50</p>
+  <p class="babypartext">White rice balls, grilled option available</p>
+  <!-- Agedashi Tofu -->
+  <p class="partext">Agedashi Tofu $6.99</p>
+  <p class="babypartext">Deep-fried tofu, served with a tentsuyu dipping sauce (made with dashi, soy sauce, and mirin)</p>
+  
+  <div class="CTR">
+  
+  <script type="text/javascript">
+
+   
+
+    // this is for the copy paste buttons
+  function copyPaste() {
+  // Get the text field
+  var copyText = document.getElementById("myInput");
+
+  // Select the text field
+  copyText.select();
+  copyText.setSelectionRange(0, 99999); // For mobile devices
+
+  // Copy the text inside the text field
+  navigator.clipboard.writeText(copyText.value);
+
+  // Alert the copied text
+  alert("Copied the text: " + copyText.value);
+  }
+  </script>
+
+</html>
