@@ -1,0 +1,243 @@
+<!DOCTYPE html>
+<html> 
+  <head>
+    <title>Bedelia's</title>
+     
+  </head>
+  <style>
+   
+ 
+   body{
+      background-color:#FEF3DF;
+    }
+
+    .img{
+      border-style: solid;
+      border-color: #1A3E62;
+    }
+    .gfg {
+            position: relative;
+            width: 100%;
+            text-align: center;
+    }
+
+    div.transbox {
+      margin: 30px;
+      background-color:#1A3E62;
+      ;
+      border: 1px solid #102942;
+
+    }
+/* this makes part of box*/
+    div.transbox p {
+      margin: 5%;
+      font-weight: bold;
+      color: #1A3E62;
+}
+
+/* this is the main title color */
+    .title{
+      color:#655d4e;
+    }
+
+/* this is the main text color */
+    .text{
+      color:#655d4e;
+    }
+
+/* menu text */
+  .partext{
+  color:#655d4e;
+  font-size: 17px;
+}
+
+/* menu desc text */
+  .babypartext{
+  color: #06212d;
+  ;
+  font-size: 15px;
+}
+
+/* this is the color for the buttom */
+    .button{
+      color:#D1DFE0;
+      border: 3px solid #0e2842;
+      background-color: #1A3E62;
+      font-size: 25px;    
+    }
+
+    .darkbrown{
+      color: rgb(222, 213, 255);
+      ;
+    }
+    .dropDownSize { 
+      width:150px; 
+
+}
+
+/* these are the main colors */
+    .colors {
+    color:#FBF5DF;
+    color:#FAEBC4;
+    color:#FEF3DF; 
+    color:#1A3E62;
+    color:#156181;
+    color:#D1DFE0;
+  }
+
+  /* this is the tabs styles */
+    .style {
+      margin: 0;
+      padding: 0;
+    }
+
+    .CTR  {
+      border: 1px solid #1A3E62;
+      margin: 1rem;
+    }
+
+    [data-tab-info] {
+      display: none;
+    }
+
+    .active[data-tab-info] {
+      display: block;
+    }
+
+    .tab-content {
+      margin-top: 1rem;
+      padding-left: 1rem;
+      font-size: 20px;
+      font-family: sans-serif;
+      font-weight: bold;
+      color: rgb(0, 0, 0);
+    }
+
+    .tabs {
+      border-bottom: 1px #1A3E62;
+      background-color: #1A3E62;
+      font-size: 25px;
+      color: rgb(222, 213, 255);
+      display: flex;
+      margin: 0;
+    }
+
+    .tabs span {
+      background: #1A3E62;
+      padding: 10px;
+      border: 1px solid #1A3E62;
+    }
+/* this should change the tabs' opacity */
+    .tabs span:hover {
+      background:#1A3E62;
+      cursor: pointer;
+      color: black;
+      opacity: 0.5;
+    }
+/* this is the end of tabs style */
+  </style>
+  <body> 
+        
+<!-- this starts the tabs -->
+        <div class="CTR">
+      
+          <div class="tabs">
+            <span data-tab-value="#Menu">Menu</span>
+          </div>
+
+            
+              <div class="gfg">
+              <div class="transbox">
+                <h1 class="darkbrown">Menu</h1>
+              </div>
+              <a class="button" class="tabs span:hover" class="active" id="Menu" href="index.html">
+                Back
+                </a> </p>
+              <p class="text"><u>Entree</u></p>
+              <!-- Sushi -->
+              <p class="partext">Sushi $9.99</p>
+              <p class="babypartext">Small balls or rolls of cooked rice served with vegetables</p>
+              <!-- Ramen -->
+              <p class="partext">Ramen $10.50</p>
+              <p class="babypartext">Bowl of ramen noodles, topped with seaweed and diced green onions</p>
+              <!-- Kare-raisu -->
+              <p class="partext">Kare-raisu $9.75</p>
+              <p class="babypartext">Rice served with curry and vegetables</p>
+              <!-- Shabu Shabu -->
+              <p class="partext">Shabu Shabu $11.99</p>
+              <p class="babypartext">A platter of cabbage, mushrooms, carrots, onions, and tofu with a bowl of dashi broth and small bowl of soy sauce</p>
+              <!-- Miso Soup -->
+              <p class="partext">Miso Soup $9.75</p>
+              <p class="babypartext">Traditional Japanese soup consisting of miso paste, dried seaweed, green onions, and tofu</p>
+              <!-- Udon -->
+              <p class="partext">Udon $10.50</P>
+              <p class="babypartext">Thick noodles made from wheat flour. Served with shiitake mushrooms, soy sauce, eggplant, and deep fried firm tofu cutlets</p>
+              <!-- Soba -->
+              <p class="partext">Soba $10.50</p>
+              <p class="babypartext">Japanese noodles made from buckwheat flour. Served with a dipping sauce and a green onion garnish.</p>
+              <!-- Tofu -->
+              <p class="partext">Tofu $8.99</p>
+              <p class="babypartext">A bowl of blocks of coagulated and compressed soy milk.</p>
+              <!-- Natto -->
+              <p class="partext">Nattō $8.50</p>
+              <p class="babypartext">Traditional Japanese food made of fermented soy beans, served with rice and your choice of sauce.</p>
+              <!-- Somen -->
+              <p class="partext">Somen $10.50</p>
+              <p class="babypartext">Thin wheat noodles served cold.</p>
+              <!-- Hiyashi Chuka -->
+               <p class="partext">Hiyashi Chuka $11.99</p>
+               <p class="babypartext">A bowl of noodles, cucumbers, and tomatos served cold.</p>
+            </div>
+           
+
+
+
+        <script type="text/javascript">
+      
+          // function to get each tab details
+          const tabs = document.querySelectorAll('[data-tab-value]')
+          const tabInfos = document.querySelectorAll('[data-tab-info]')
+      
+          tabs.forEach(tab => {
+            tab.addEventListener('click', () => {
+              const target = document
+                .querySelector(tab.dataset.tabValue);
+              tabInfos.forEach(tabInfo => {
+                tabInfo.classList.remove('active')
+              })
+              target.classList.add('active');
+            })
+          })
+        </script>
+  <div class="CTR">
+
+
+  <script type="text/javascript">
+
+   
+
+    // this is for the copy paste buttons
+  function copyPaste() {
+  // Get the text field
+  var copyText = document.getElementById("myInput");
+
+  // Select the text field
+  copyText.select();
+  copyText.setSelectionRange(0, 99999); // For mobile devices
+
+   // Copy the text inside the text field
+  navigator.clipboard.writeText(copyText.value);
+
+  // Alert the copied text
+  alert("Copied the text: " + copyText.value);
+  }
+  </script>
+
+
+  <!-- this is a button if needed for later -->
+<!--
+<a class="button" href="https://www.youtube.com/watch?v=d1NjkYjRn34">
+  Yippee -->
+
+  </body>
+</html>
