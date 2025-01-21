@@ -11,37 +11,37 @@
       background-color:#FEF3DF;
     }
 
-   .img{
+    .img{
       border-style: solid;
       border-color: #1A3E62;
     }
-   .gfg {
-      position: relative;
-      width: 100%;
-      text-align: center;
+    .gfg {
+            position: relative;
+            width: 100%;
+            text-align: center;
     }
 
-   div.transbox {
+    div.transbox {
       margin: 30px;
       background-color:#1A3E62;
       ;
       border: 1px solid #102942;
-    }
 
+    }
 /* this makes part of box*/
-   div.transbox p {
+    div.transbox p {
       margin: 5%;
       font-weight: bold;
       color: #1A3E62;
 }
 
 /* this is the main title color */
-   .title{
+    .title{
       color:#655d4e;
     }
 
 /* this is the main text color */
-   .text{
+    .text{
       color:#655d4e;
     }
 
@@ -59,15 +59,18 @@
 }
 
 /* this is the color for the buttom */
-   .button{
+    .button{
       color:#D1DFE0;
+      border: 3px solid #0e2842;
+      background-color: #1A3E62;
+      font-size: 25px;    
     }
 
-   .darkbrown{
+    .darkbrown{
       color: rgb(222, 213, 255);
       ;
     }
-   .dropDownSize { 
+    .dropDownSize { 
       width:150px; 
 
 }
@@ -83,25 +86,25 @@
   }
 
   /* this is the tabs styles */
-   .style {
+    .style {
       margin: 0;
       padding: 0;
     }
 
-   .CTR  {
+    .CTR  {
       border: 1px solid #1A3E62;
       margin: 1rem;
     }
 
-   [data-tab-info] {
+    [data-tab-info] {
       display: none;
     }
 
-   .active[data-tab-info] {
+    .active[data-tab-info] {
       display: block;
     }
 
-   .tab-content {
+    .tab-content {
       margin-top: 1rem;
       padding-left: 1rem;
       font-size: 20px;
@@ -110,7 +113,7 @@
       color: rgb(0, 0, 0);
     }
 
-   .tabs {
+    .tabs {
       border-bottom: 1px #1A3E62;
       background-color: #1A3E62;
       font-size: 25px;
@@ -119,13 +122,13 @@
       margin: 0;
     }
 
-   .tabs span {
+    .tabs span {
       background: #1A3E62;
       padding: 10px;
       border: 1px solid #1A3E62;
     }
 /* this should change the tabs' opacity */
-   .tabs span:hover {
+    .tabs span:hover {
       background:#1A3E62;
       cursor: pointer;
       color: black;
@@ -133,44 +136,44 @@
     }
 /* this is the end of tabs style */
   </style>
-  <body>
+  <body> 
+        
 <!-- this starts the tabs -->
         <div class="CTR">
       
           <div class="tabs">
             <span data-tab-value="#Menu">Menu</span>
           </div>
-    
-    
-<div class="tabs__tab" id="Menu" data-tab-info>
-  <div class="gfg">
-  <div class="transbox">
-    <h1 class="darkbrown">Menu</h1>
-    
-  </div>
-  <p class="text">MENU</p>
-  <img src="https://upload.wikimedia.org/wikipedia/commons/4/4c/Deep_fried_gyoza.jpg">
-    <p>deep fried gyoza</p>
-  <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRTT83UOCYF6mTHXRy32xQVaUxn5EJZEACwJOUi_2JS6bG4_D0RMms9OEF8c2x_j7hmRFo&usqp=CAU">
-    <p>Onigiri</p>
-  <p class="text"><u>Appetizers</u></p>
-  <!-- Gyoza -->
-  <p class="partext">Gyoza $7.99</p>
-  <p class="babypartext">Japanese dumplings made of dough and filled with</p>
-  <p class="babypartext">mushrooms, onions, carrots, leeks, and cabbage;</p>
-  <p class="babypartext">seasoned with salt, garlic, and ginger.</p>
-  <!-- Yakitori -->
-  <p class="partext">Tofu and Mushroom Yakitori $6.99</p>
-  <p class="babypartext">A japanese barbeque skewer; made with mushrooms and green onions. 
-      Grilled over a charcoal fire and brushed with tare sauce.</p>
-  <!-- Onigiri -->
-  <p class="partext">Onigiri $5.50</p>
-  <p class="babypartext">White rice balls, grilled option available</p>
-  <!-- Agedashi Tofu -->
-  <p class="partext">Agedashi Tofu $6.99</p>
-  <p class="babypartext">Deep-fried tofu, served with a tentsuyu dipping sauce (made with dashi, soy sauce, and mirin)</p>
-</div>
-  
+
+            
+              <div class="gfg">
+              <div class="transbox">
+                <h1 class="darkbrown">Menu</h1>
+              </div>
+              <a class="button" class="tabs span:hover" class="active" id="Menu" href="index.html">
+                Back
+                </a> </p>
+              <p class="text"><u>Appetizers</u></p>
+              <!-- Gyoza -->
+              <p class="partext">Gyoza $7.99</p>
+              <p class="babypartext">Japanese dumplings made of dough and filled with</p>
+              <p class="babypartext">mushrooms, onions, carrots, leeks, and cabbage;</p>
+              <p class="babypartext">seasoned with salt, garlic, and ginger.</p>
+              <!-- Yakitori -->
+              <p class="partext">Tofu and Mushroom Yakitori $6.99</p>
+              <p class="babypartext">A japanese barbeque skewer; made with mushrooms and green onions. 
+                Grilled over a charcoal fire and brushed with tare sauce.</p>
+              <!-- Onigiri -->
+              <p class="partext">Onigiri $5.50</p>
+              <p class="babypartext">White rice balls, grilled option available</p>
+              <!-- Agedashi Tofu -->
+              <p class="partext">Agedashi Tofu $6.99</p>
+              <p class="babypartext">Deep-fried tofu, served with a tentsuyu dipping sauce (made with dashi, soy sauce, and mirin)</p>
+            </div>
+           
+
+
+
         <script type="text/javascript">
       
           // function to get each tab details
@@ -189,7 +192,8 @@
           })
         </script>
   <div class="CTR">
-  
+
+
   <script type="text/javascript">
 
    
@@ -203,12 +207,19 @@
   copyText.select();
   copyText.setSelectionRange(0, 99999); // For mobile devices
 
-  // Copy the text inside the text field
+   // Copy the text inside the text field
   navigator.clipboard.writeText(copyText.value);
 
   // Alert the copied text
   alert("Copied the text: " + copyText.value);
   }
   </script>
+
+
+  <!-- this is a button if needed for later -->
+<!--
+<a class="button" href="https://www.youtube.com/watch?v=d1NjkYjRn34">
+  Yippee -->
+
   </body>
 </html>
